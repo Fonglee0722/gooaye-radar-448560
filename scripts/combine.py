@@ -45,6 +45,7 @@ function show(v){
 <div class="view" id="v-dash">{dash_body}</div>
 <script>{js}</script></body></html>"""
     out = ROOT / "output" / "index.html"
+    out.parent.mkdir(exist_ok=True)   # CI 上 output/ 不存在, 先建
     out.write_text(html, encoding="utf-8")
     print(f"產生單一連結 {out}")
     print(f"追蹤總表 {len(wl_rows)} 檔 ({buy_n} 可進場) · 每集卡片 {len(dash_cards)} 集 · 資料截至 {asof}")
