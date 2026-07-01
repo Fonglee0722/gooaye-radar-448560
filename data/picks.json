@@ -1,0 +1,19 @@
+[
+  {"ep":563,"date":"2025-07-04","name":"貿聯-KY","ticker":"3665.TW","market":"TW","group":"AI伺服器連接線材","stance":"bull"},
+  {"ep":563,"date":"2025-07-04","name":"Credo","ticker":"CRDO","market":"US","group":"AI伺服器連接線材","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"精材","ticker":"5347.TWO","market":"TW","group":"台積電先進封裝/CIS","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"采鈺","ticker":"6789.TW","market":"TW","group":"台積電先進封裝/CIS","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"長榮航太","ticker":"2645.TW","market":"TW","group":"無人機/航太","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"Confluent","ticker":"CFLT","market":"US","group":"軟體","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"Meta","ticker":"META","market":"US","group":"雲端/網路巨頭","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"Amazon","ticker":"AMZN","market":"US","group":"雲端/網路巨頭","stance":"bull"},
+  {"ep":580,"date":"2025-08-02","name":"Alphabet","ticker":"GOOGL","market":"US","group":"雲端/網路巨頭","stance":"bull"},
+  {"ep":597,"date":"2025-10-01","name":"偉詮電","ticker":"5344.TWO","market":"TW","group":"台積電先進封裝/CIS","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"穩懋","ticker":"3105.TWO","market":"TW","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"貿聯-KY","ticker":"3665.TW","market":"TW","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"台積電","ticker":"2330.TW","market":"TW","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"昇達科","ticker":"3491.TWO","market":"TW","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"Lumentum","ticker":"LITE","market":"US","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"Coherent","ticker":"COHR","market":"US","group":"光通訊CPO","stance":"bull"},
+  {"ep":641,"date":"2026-03-04","name":"AXT","ticker":"AXTI","market":"US","group":"光通訊CPO","stance":"bull"}
+]
