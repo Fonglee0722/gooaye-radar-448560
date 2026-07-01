@@ -76,7 +76,11 @@ tr.star td{background:#eefaf3}
 .tk{font-family:ui-monospace,monospace;color:#77756e;font-size:11px}
 .sig-buy{color:#0f6e56;font-weight:600}.sig-wait{color:#854f0b}.sig-no{color:#a32d2d}
 .win-hi{color:#0f6e56;font-weight:500}.win-lo{color:#a32d2d}
-.small{font-size:11px;color:#8a8880}"""
+.small{font-size:11px;color:#8a8880}
+.filterbar{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.fbtn{padding:6px 14px;border:1px solid #e5e3dc;border-radius:8px;background:#fff;cursor:pointer;font-size:13px;color:#5f5e5a}
+.fbtn.active{background:#1c1c1a;color:#fff;border-color:#1c1c1a}
+.fcount{font-size:12px;color:#8a8880}"""
 
 def esc(s): return (s or "").replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
 
@@ -92,28 +96,45 @@ def render(rows):
             hist = '<span class="small">—</span>'
         sc = "sig-buy" if r["signal"][0] in "✅🔥" else ("sig-wait" if r["signal"][0] in "⚠️⏳" else "sig-no")
         star = "★ " if r["star"] else ""
+        starflag = "1" if r["star"] else "0"
         trs.append(
-            f'<tr class="{"star" if r["star"] else ""}">'
+            f'<tr class="{"star" if r["star"] else ""}" data-mk="{r["market"]}" data-star="{starflag}">'
             f'<td>{star}<b>{esc(r["name"])}</b> {mk}<br><span class="tk">{r["ticker"]}</span></td>'
             f'<td>{esc(r["sector"])}<br>{hist}</td>'
             f'<td><span class="badge {tb}">{r["trend"]}</span><br><span class="small">離20日線{r["vsma20"]:+.0f}% · RSI{r["rsi"]:.0f}</span></td>'
             f'<td class="{sc}">{r["signal"]}</td>'
             f'<td>{esc(r["entry"])}<br><span class="small">{esc(r["entry_reason"])}</span></td>'
             f'<td class="small">{esc(r["risk"])}</td>'
-            f'<td class="small">EP{r["last_ep"]} · 提{r["n"]}次<br>{esc(r["reason"])}</td></tr>')
+            f'<td class="small">EP{r["last_ep"]} · {r["last_date"]} · 提{r["n"]}次<br>{esc(r["reason"])}</td></tr>')
     asof = rows[0]["asof"] if rows else TODAY
     buy_n = sum(1 for r in rows if r["signal"][0] in "✅🔥")
-    legend = ('<div class="legend"><b>訊號:</b> ✅可進場 / 🔥帶量突破 / ⚠️過熱等回檔 / ⏳等站上均線 / ⛔轉弱觀望。 '
-              '<b>★</b>=可進場且屬強勢族群。<br>'
-              '<b>多頭排列</b>=收盤>20日均線>60日均線(趨勢向上)。<b>進場參考</b>照回測: 多頭排列才進、不追過熱。<br>'
-              '<b>風控參考</b>=跌破60日均線視為趨勢轉弱。<b>注意:</b> 回測顯示「機械式停損反而砍掉贏家」, 此欄僅供風險意識, 策略基準是抱約90天不亂停損。此為回測統計, 非投資建議。</div>')
+    legend = ('<div class="legend"><b>★ 是什麼:</b> 同時符合回測出的「高勝率組合」——他看多 + 目前多頭排列 + 屬歷史勝率≥60%的強勢族群(美股再加帶量突破)。'
+              '<b>綠底★=現在最值得看</b>; 沒★=他有看多但目前線型或族群條件不夠。<br>'
+              '<b>訊號:</b> ✅可進場 / 🔥帶量突破 / ⚠️過熱等回檔 / ⏳等站上均線 / ⛔轉弱觀望。 '
+              '<b>多頭排列</b>=收盤>20日均線>60日均線(趨勢向上)。<br>'
+              '<b>風控參考</b>=跌破60日均線視為轉弱。<b>注意:</b> 回測顯示機械式停損反而砍掉贏家, 此欄僅供風險意識, 基準是抱約90天。此為回測統計, 非投資建議。</div>')
+    filt = ('<div class="filterbar">'
+            '<button class="fbtn active" data-f="all" onclick="wlFilter(\'all\',this)">全部</button>'
+            '<button class="fbtn" data-f="US" onclick="wlFilter(\'US\',this)">美股</button>'
+            '<button class="fbtn" data-f="TW" onclick="wlFilter(\'TW\',this)">台股</button>'
+            '<button class="fbtn" data-f="star" onclick="wlFilter(\'star\',this)">只看 ★</button>'
+            '<span class="fcount" id="wlcount"></span></div>')
+    script = ('<script>function wlFilter(f,btn){'
+              'document.querySelectorAll(".filterbar .fbtn").forEach(b=>b.classList.remove("active"));'
+              'if(btn)btn.classList.add("active");'
+              'var rows=document.querySelectorAll("#wltable tbody tr"),shown=0;'
+              'rows.forEach(function(tr){var mk=tr.getAttribute("data-mk"),st=tr.getAttribute("data-star");'
+              'var ok=(f=="all")||(f=="star"&&st=="1")||(mk==f);'
+              'tr.style.display=ok?"":"none";if(ok)shown++;});'
+              'var c=document.getElementById("wlcount");if(c)c.textContent="顯示 "+shown+" 檔";}</script>')
     return (f'<!doctype html><html><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>股癌追蹤總表</title><style>{CSS}</style></head><body>'
             f'<h1>股癌追蹤總表</h1>'
             f'<div class="sub">最近三個月看多標的 · 線型即時更新至 {asof} · 共{len(rows)}檔, {buy_n}檔目前可進場</div>'
-            f'{legend}<table><tr><th>標的</th><th>族群/歷史勝率</th><th>目前線型</th><th>訊號</th>'
-            f'<th>進場參考</th><th>風控參考</th><th>他為何看多</th></tr>{"".join(trs)}</table></body></html>')
+            f'{legend}{filt}<table id="wltable"><thead><tr><th>標的</th><th>族群/歷史勝率</th><th>目前線型</th><th>訊號</th>'
+            f'<th>進場參考</th><th>風控參考</th><th>他為何看多</th></tr></thead><tbody>{"".join(trs)}</tbody></table>'
+            f'{script}</body></html>')
 
 if __name__ == "__main__":
     rows = build()
