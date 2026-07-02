@@ -107159,5 +107159,148 @@
   "stance": "bull",
   "conviction": "med",
   "reason": "有壓到整個CPU題材波段"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "聯發科",
+  "market": "TW",
+  "ticker": "2454.TW",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "IC Design全面轉強領頭"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "創意",
+  "market": "TW",
+  "ticker": "3443.TW",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "IC Design族群轉強"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "世芯",
+  "market": "TW",
+  "ticker": "3661.TW",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "IC Design族群轉強"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "IC Design族群",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "全面轉強走出新多頭"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "被動元件",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "七月漲價信連發行情持續"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "國巨",
+  "market": "TW",
+  "ticker": "2327.TW",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "噴很多不評論股價"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "功率元件",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "Mosfet缺貨漲價趨勢明確"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "主動元件族群",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "類似早期被動元件漲價啟動"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "安森美",
+  "market": "US",
+  "ticker": "ON",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "med",
+  "reason": "併購被殺但基本面正向"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "台積電",
+  "market": "TW",
+  "ticker": "2330.TW",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "Rebalance結束資金匯聚法說前瞻"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "南電ABF相關",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "南電樓上修帶動族群搶勢"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "TGV族群",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "CoWoS封裝題材持續被關注"
+ },
+ {
+  "ep": 675,
+  "date": "2026-07-01",
+  "name": "記憶體",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "提及行情類比不直接推薦"
  }
 ]
