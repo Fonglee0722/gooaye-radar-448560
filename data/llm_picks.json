@@ -107302,5 +107302,126 @@
   "stance": "neutral",
   "conviction": "low",
   "reason": "提及行情類比不直接推薦"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "被動元件",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "率先轉強領漲市場"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "功率元件/MOSFET",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "缺料漲價白熱化"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "封測族群",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "封裝價格大漲轉強"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "日月光",
+  "market": "TW",
+  "ticker": "3711.TW",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "僅舉例提及封測龍頭"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "京元電(KYEC)",
+  "market": "TW",
+  "ticker": "2449.TW",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "順口提及幫NVIDIA封測"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "光通訊",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "neutral",
+  "conviction": "med",
+  "reason": "產業佳但市場資金未到"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "Lumentum",
+  "market": "US",
+  "ticker": "LITE",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "舉例光通訊產業好但不漲"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "Coherent",
+  "market": "US",
+  "ticker": "COHR",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "舉例光通訊產業好但不漲"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "Meta",
+  "market": "US",
+  "ticker": "META",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "Neo Cloud是加碼非退出"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "驅動IC(DDIC)",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "neutral",
+  "conviction": "med",
+  "reason": "成本轉嫁有效但展望平淡"
+ },
+ {
+  "ep": 676,
+  "date": "2026-07-04",
+  "name": "聯發科",
+  "market": "TW",
+  "ticker": "2454.TW",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "舉例AI故事帶動股價先行"
  }
 ]
