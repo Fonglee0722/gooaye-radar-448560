@@ -107632,5 +107632,148 @@
   "stance": "bull",
   "conviction": "low",
   "reason": "右上角無大壞消息中性偏多"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "NVIDIA",
+  "market": "US",
+  "ticker": "NVDA",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "再攻200美元重返季線走勢強"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "META",
+  "market": "US",
+  "ticker": "META",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "high",
+  "reason": "祖克柏確認滿倉加碼AI非退出"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "Credo",
+  "market": "US",
+  "ticker": "CRDO",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "銅概念被錯殺現已回到新高"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "Astera Labs",
+  "market": "US",
+  "ticker": "ALAB",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "銅概念被錯殺現已回到新高"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "Coherent",
+  "market": "US",
+  "ticker": "COHR",
+  "kind": "個股",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "矽光代表走勢偏弱觀察中"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "ADI",
+  "market": "US",
+  "ticker": "ADI",
+  "kind": "個股",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "發出漲價信功率元件全面漲"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "記憶體",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "合約價續漲巨頭採購未見敗象"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "被動元件",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "絕大多數廠商漲價成功持續進行"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "功率元件",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "缺貨擴張台系廠商走勢漂亮"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "導線架",
+  "market": "TW",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bull",
+  "conviction": "med",
+  "reason": "lead time拉至7-8個月漲10-20%"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "光通訊-Narrow and Fast",
+  "market": "OTHER",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bear",
+  "conviction": "med",
+  "reason": "資金轉出矽光化合物雷射轉弱"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "光通訊-Wide and Slow(VCSEL/AOI)",
+  "market": "OTHER",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "neutral",
+  "conviction": "low",
+  "reason": "線型相對強但謝自己尚未介入"
+ },
+ {
+  "ep": 678,
+  "date": "2026-07-11",
+  "name": "Neo Cloud算力租賃",
+  "market": "OTHER",
+  "ticker": null,
+  "kind": "族群",
+  "stance": "bear",
+  "conviction": "med",
+  "reason": "Meta加入競爭定價承壓估值收斂"
  }
 ]
